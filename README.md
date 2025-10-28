@@ -166,28 +166,14 @@ ant clean - Build файлууд устгах
 ant all - Бүгдийг нэг дор ажиллуулах
 8. Тестийн хамрах хүрээ (Test Coverage)
 Функционал	Тестлэгдсэн эсэх
-Уулзалт товлох	✅
-Амралт товлох	✅
-Өрөөний сул эсэх шалгах	✅
-Хүний завтай эсэх шалгах	✅
-Цагийн давхцал илрүүлэх	✅
-Буруу огноо шалгах	✅
-Буруу цаг шалгах	✅
+Уулзалт товлох	
+Амралт товлох	
+Өрөөний сул эсэх шалгах	
+Хүний завтай эсэх шалгах	
+Цагийн давхцал илрүүлэх	
+Буруу огноо шалгах	
+Буруу цаг шалгах	
 Coverage: Үндсэн функционалуудын ~85% тестлэгдсэн.
 
 9. Дүгнэлт
 Unit тест бичих явцад систем дээр 3 чухал алдаа илэрсэн. Эдгээр алдаанууд нь input validation хийгээгүй буюу дутуу хийсэнтэй холбоотой. Тестүүд нь JUnit framework-ийн үндсэн assertion болон exception testing-г зөв ашигласан. Build tool (Ant) тохируулагдсан бөгөөд тест болон javadoc үүсгэх боломжтой болсон.
-
-10. GitHub Repository
-Repository URL: [Энд GitHub link оруулах]
-Collaborator: gobi
-
-Commits:
-Initial commit: Source code нэмсэн
-Test commit 1: CalendarTest бичсэн
-Test commit 2: MeetingTest, PersonTest, RoomTest бичсэн
-Test commit 3: OrganizationTest бичсэн
-Build commit: build.xml файл нэмсэн
-Final commit: README болон тайлан нэмсэн
-Тайлан бэлтгэсэн: [Таны нэр]
-Огноо: 2025-10-28
