@@ -72,9 +72,11 @@ public class CalendarTest {
 	public void testAddMeeting_timeConflict() {
 		try {
 			Meeting meeting1 = new Meeting(6, 20, 10, 12);
+			meeting1.setDescription("First Meeting");
 			calendar.addMeeting(meeting1);
 			
 			Meeting meeting2 = new Meeting(6, 20, 10, 12);
+			meeting2.setDescription("Second Meeting");
 			assertThrows(TimeConflictException.class, () -> calendar.addMeeting(meeting2));
 		} catch(TimeConflictException e) {
 			fail("First meeting should not throw exception");

@@ -28,7 +28,9 @@ public class PersonTest {
 	public void testAddMeeting_timeConflict() {
 		Person person = new Person("Bob");
 		Meeting meeting1 = new Meeting(4, 10, 10, 12);
+		meeting1.setDescription("Meeting 1");
 		Meeting meeting2 = new Meeting(4, 10, 11, 13);
+		meeting2.setDescription("Meeting 2");
 		
 		try {
 			person.addMeeting(meeting1);

@@ -28,7 +28,9 @@ public class RoomTest {
 	public void testAddMeeting_timeConflict() {
 		Room room = new Room("C303");
 		Meeting meeting1 = new Meeting(4, 10, 10, 12);
+		meeting1.setDescription("Meeting 1");
 		Meeting meeting2 = new Meeting(4, 10, 11, 13);
+		meeting2.setDescription("Meeting 2");
 		
 		try {
 			room.addMeeting(meeting1);
